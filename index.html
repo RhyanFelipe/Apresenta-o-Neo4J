@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neo4j - Apresentação Interativa</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<header>
+<h1>Neo4j</h1>
+<p>Banco de Dados de Grafos</p>
+
+<div class="authors">
+Rhyan Felipe • Rhuan Guilherme • Jose Gabryel
+</div>
+</header>
+
+<section class="hero">
+
+<div class="graph">
+
+<div class="node center">Neo4j</div>
+
+<div class="node top">Pessoa</div>
+
+<div class="node left">Produto</div>
+
+<div class="node right">Empresa</div>
+
+<div class="node bottom">Cliente</div>
+
+</div>
+
+</section>
+
+<section class="topics">
+
+<div class="topic" onclick="openModal('oque')">
+<i class="fa-solid fa-circle-nodes"></i>
+<span>O que é?</span>
+</div>
+
+<div class="topic" onclick="openModal('historia')">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<span>História</span>
+</div>
+
+<div class="topic" onclick="openModal('funciona')">
+<i class="fa-solid fa-diagram-project"></i>
+<span>Como Funciona</span>
+</div>
+
+<div class="topic" onclick="openModal('cypher')">
+<i class="fa-solid fa-code"></i>
+<span>Cypher</span>
+</div>
+
+<div class="topic" onclick="openModal('sql')">
+<i class="fa-solid fa-database"></i>
+<span>Neo4j vs SQL</span>
+</div>
+
+<div class="topic" onclick="openModal('instagram')">
+<i class="fa-brands fa-instagram"></i>
+<span>Instagram</span>
+</div>
+
+<div class="topic" onclick="openModal('linkedin')">
+<i class="fa-brands fa-linkedin"></i>
+<span>LinkedIn</span>
+</div>
+
+<div class="topic" onclick="openModal('spotify')">
+<i class="fa-brands fa-spotify"></i>
+<span>Spotify</span>
+</div>
+
+<div class="topic" onclick="openModal('netflix')">
+<i class="fa-solid fa-film"></i>
+<span>Netflix</span>
+</div>
+
+<div class="topic" onclick="openModal('waze')">
+<i class="fa-brands fa-waze"></i>
+<span>Waze</span>
+</div>
+
+<div class="topic" onclick="openModal('ia')">
+<i class="fa-solid fa-brain"></i>
+<span>IA e Fraudes</span>
+</div>
+
+<div class="topic" onclick="openModal('conclusao')">
+<i class="fa-solid fa-flag-checkered"></i>
+<span>Conclusão</span>
+</div>
+
+</section>
+
+<div class="modal" id="modal">
+
+<div class="cloud">
+
+<button class="close" onclick="closeModal()">✕</button>
+
+<div class="modal-icon" id="modalIcon"></div>
+
+<h2 id="title"></h2>
+
+<div id="content"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
